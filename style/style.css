@@ -1,0 +1,53 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+h1{
+    color: #444;
+    margin-left: 20px;
+}
+.accordion {
+    background-color: #c7d1d4;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: 0.4s;
+    margin-top: 10px;
+}
+
+.active, .accordion:hover {
+    background-color: #444; 
+    color: #c7d1d4;
+}
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+.last-month{
+    color: #999999;
+}
+
+#ex6__image{
+    margin-top: 20px;
+    width: 90vw;
+    height: 400px;
+    max-width: 800px;
+    object-position: 50% 100%;
+    object-fit: cover;
+    margin-left: calc((100% - 800px)/2);
+}
+.ex7__button{
+    margin-top: 10px;
+    border: none;
+    font-size: 20px;
+}
+.ex6__text{
+    text-align: center;
+    font-size: 24px;
+}

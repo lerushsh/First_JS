@@ -1,0 +1,27 @@
+.ex5__paragraph{
+    background-color: rgb(94, 125, 152);
+    padding: 10px;
+    width: 60%;
+    text-align: center;
+    margin-left: 20%;
+    color: aliceblue;
+    font-size: 18px;
+}
+.paragraph-nechet{
+    background-color: rgb(94, 149, 152);
+}
+.ex5__button{
+    font-size: 20px;
+    padding: 5px;
+    border: 0;
+    margin: 10px;
+    background-color: rgb(188, 197, 203);
+    color: #444;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+}
+.ex5__button:hover{
+    background-color: #444;
+    color: rgb(188, 197, 203);
+}

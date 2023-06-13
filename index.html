@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вариант 17</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/exercise2.css">
+    <link rel="stylesheet" href="style/exercise4.css">
+    <link rel="stylesheet" href="style/exercise5.css">
+
+    <script src="js/exercise1.js"></script>
+    <script src="js/exercise2.js"></script>
+    
+
+
+</head>
+
+<body>
+    <h1 class="variant">Задания по JS </h1>
+    <button class="accordion">Задание 1</button>
+    <div class="panel">
+        <p class="DateTime"></p>
+        <script>
+            setInterval(ShowTime, 1000);
+        </script>
+    </div>
+    <button class="accordion">Задание 2</button>
+    <div class="panel">
+        <div id="calendar"></div>
+        <script>
+            createCalendar(calendar);
+        </script>
+    </div>
+    <button class="accordion">Задание 3</button>
+    <div class="panel">
+        <p id="KolDiv"></p>
+    </div>
+    <button class="accordion button4">Задание 4</button>
+    <div class="panel">
+        <div class="exercise4-blocks">
+            <div class="exercise4-block block-1">1</div>
+            <div class="exercise4-block block-2">2</div>
+            <div class="exercise4-block block-3">3</div>
+            <div class="exercise4-block block-4">4</div>
+            <div class="exercise4-block block-5">5</div>
+            <div class="exercise4-block block-6">6</div>
+            <div class="exercise4-block block-7">7</div>
+            <div class="exercise4-block block-8">8</div>
+        </div>
+        <script src="js/exercise4.js"></script>
+    </div>
+    <button class="accordion button5">Задание 5</button>
+    <div class="panel panel-5">
+        <button class = "ex5__button">Нажмите чтобы поменять местами</button>
+        <div class="ex5">
+            <p class="ex5__paragraph paragraph-nechet">Абзац 1</p>
+            <p class="ex5__paragraph paragraph-chet">Абзац 2</p>
+            <p class="ex5__paragraph paragraph-nechet">Абзац 3</p>
+            <p class="ex5__paragraph paragraph-chet">Абзац 4</p>
+            <p class="ex5__paragraph paragraph-nechet">Абзац 5</p>
+            <p class="ex5__paragraph paragraph-chet">Абзац 6</p>
+            <p class="ex5__paragraph paragraph-nechet">Абзац 7</p>
+            <p class="ex5__paragraph paragraph-chet">Абзац 8</p>
+            <script src="js/exercise5.js"></script>
+        </div>       
+    </div>
+    <button class="accordion">Задание 6</button>
+    <div class="panel">
+        <div class="ex6__text">
+        <p>Проведите по изображению, чтобы изменить его!</p></div>
+        <img id ="ex6__image" src="images/im1.jpg" alt="image">
+        <script defer src="js/exercise6.js"></script> 
+        <script>
+            
+        </script>
+    </div>
+    <button class="accordion">Задание 7</button>
+    <div class="panel">
+        <button class="ex7__button" >Сладости здесь! (нажмите сюда, чтобы увидеть сладости)</button>
+        <div class="ex7__p">
+            <p class="ex7__el">Пирожение (нажмите на сладости, чтобы они исчезли)</p>
+            <p class="ex7__el">Мёд</p>
+            <p class="ex7__el">Конфета</p>
+            <p class="ex7__el">Торт</p>
+        </div>
+        <p class="ex7__end">Сладости закончились</p>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display == "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <script src="js/exercise3.js"></script>
+    <script src="js/exercise7.js"></script>
+</body>
+
+</html>

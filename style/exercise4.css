@@ -1,0 +1,24 @@
+.exercise4-blocks{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.exercise4-block{
+    width: 100px;
+    height: 80px;
+    margin-right: 10px;
+    margin-top: 10px;
+    font-size: 36px;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+}
+.block-1, .block-3, .block-5, .block-7{
+    background-color: #408688;
+}
+.block-2, .block-4, .block-6, .block-8{
+    background-color: #2e606f;
+}
+.block-8{
+    margin-right: 0;
+}
